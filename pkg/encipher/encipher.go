@@ -1,3 +1,7 @@
+// Package encipher provides functionality for generating encryption keys
+// and performing AES encryption and decryption. This package utilizes the
+// crypto/aes and crypto/cipher libraries from the Go standard library to ensure
+// secure encryption practices.
 package encipher
 
 import (
