@@ -32,12 +32,12 @@ func GenerateEncryptionKey() (string, error) {
 
 	_, err := rand.Read(key)
 	if err != nil {
-		return nil, err
+		return "", err
 	}
 
 	hexKey := hex.EncodeToString(key)
 
-	return hexKey
+	return hexKey, nil
 }
 
 // Encryption key is a 32-byte key
